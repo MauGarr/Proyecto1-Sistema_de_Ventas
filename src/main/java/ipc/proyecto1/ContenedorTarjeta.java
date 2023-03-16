@@ -4,14 +4,12 @@ public class ContenedorTarjeta {
     
 String nameTarjeta;
 String numTarjeta;
-String cvv;
 String fecha;
 
 
-    public ContenedorTarjeta(String nameTarjeta, String numTarjeta, String cvv, String fecha) {
+    public ContenedorTarjeta(String nameTarjeta, String numTarjeta, String fecha) {
         this.nameTarjeta = nameTarjeta;
         this.numTarjeta = numTarjeta;
-        this.cvv = cvv;
         this.fecha = fecha;
     }
 
@@ -29,14 +27,6 @@ String fecha;
 
     public void setNumTarjeta(String numTarjeta) {
         this.numTarjeta = numTarjeta;
-    }
-
-    public String getCvv() {
-        return cvv;
-    }
-
-    public void setCvv(String cvv) {
-        this.cvv = cvv;
     }
 
     public String getFecha() {

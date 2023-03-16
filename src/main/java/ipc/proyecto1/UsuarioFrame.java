@@ -280,14 +280,13 @@ public class UsuarioFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_PedidoButtonActionPerformed
 
     private void SaveTargetaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveTargetaButtonActionPerformed
-        if (!NameTargetaTextField.getText().equals("") && !NumTargetaTextField.getText().equals("") && !cvvTextField.getText().equals("") && DateVenChooser.getDate() != null) {
+        if (!NameTargetaTextField.getText().equals("") && !NumTargetaTextField.getText().equals("") && DateVenChooser.getDate() != null) {
             String nameTarjeta = NameTargetaTextField.getText();
             String numTarjeta = NumTargetaTextField.getText();
-            String cvv = cvvTextField.getText();
             SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
             String date = formatoFecha.format(DateVenChooser.getDate());
 
-            ContenedorTarjeta ct = new ContenedorTarjeta(nameTarjeta, numTarjeta, cvv, date);
+            ContenedorTarjeta ct = new ContenedorTarjeta(nameTarjeta, numTarjeta, date);
             AppState.usuarioLogeado.agregarTarjeta(ct);
 
             UsuarioFrame usuario = new UsuarioFrame();
@@ -329,7 +328,6 @@ public class UsuarioFrame extends javax.swing.JFrame {
             for (int i = 0; i < AppState.usuarioLogeado.tarjetas.size(); i++) {
                 modeloDatos.setValueAt(AppState.usuarioLogeado.tarjetas.get(i).getNameTarjeta(), i, 0);
                 modeloDatos.setValueAt(AppState.usuarioLogeado.tarjetas.get(i).getNumTarjeta(), i, 1);
-                modeloDatos.setValueAt(AppState.usuarioLogeado.tarjetas.get(i).getCvv(), i, 2);
                 modeloDatos.setValueAt(AppState.usuarioLogeado.tarjetas.get(i).getFecha(), i, 3);
             }
         }
