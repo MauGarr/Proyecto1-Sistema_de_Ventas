@@ -12,7 +12,6 @@ public class AppState {
       // departamentos.add(new Departamentos(codigoRegistro, codigoDep, nameDep));
         usuarios.add(new Usuario(cerreo, nombre, apellido, alias, dpi,nacionalida, telefono, genero, rol, fecha, contrasena));
     }
-    
 }
 
 
