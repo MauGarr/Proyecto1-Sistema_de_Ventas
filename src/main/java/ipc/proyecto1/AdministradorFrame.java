@@ -30,7 +30,6 @@ public class AdministradorFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -79,9 +78,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setText("USAC-DELIVERY");
-
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel2.setText("MANERJO DE KIOSCOS");
 
         jLabel4.setText("CÓDIGO DE KIOSCO");
@@ -90,6 +87,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
 
         jLabel6.setText("CÓDIGO DE LA REGIÓN");
 
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel7.setText("MANEJO DE REGIONES");
 
         jLabel8.setText("CÓDIGO DE REGIÓN:");
@@ -100,6 +98,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
 
         jLabel11.setText("PRECIO ESPECIAL:");
 
+        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel12.setText("MANEJO DE DEPARTAMENTOS");
 
         jLabel13.setText("CÓDIGO DE REGIÓN:");
@@ -129,6 +128,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel18.setText("MANEJO DE MUNICIPIOS");
 
         jLabel19.setText("CÓDIGO DE DEPARTAMENTO:");
@@ -142,6 +142,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel21.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel21.setText("REPORTES");
 
         jLabel24.setText("LISTA DE REGIONES CON MÁS ENVÍOS:");
@@ -152,22 +153,22 @@ public class AdministradorFrame extends javax.swing.JFrame {
 
         jLabel27.setText("LISTA DE USUARIOS CON MÁS PAQUETES ENVIADOS:");
 
-        jButton1.setText("CONSULTAR");
+        jButton1.setText("Consultar");
 
-        jButton2.setText("CONSULTAR");
+        jButton2.setText("Consultar");
 
-        jButton3.setText("CONSULTAR");
+        jButton3.setText("Consultar");
 
-        jButton4.setText("CONSULTAR");
+        jButton4.setText("Consultar");
 
-        CerrarButton.setText("CERRAR");
+        CerrarButton.setText("Cerrar");
         CerrarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CerrarButtonActionPerformed(evt);
             }
         });
 
-        VerButton.setText("VER DATOS GUARDADOS");
+        VerButton.setText("Ver Datos Guardados");
         VerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VerButtonActionPerformed(evt);
@@ -180,7 +181,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
             }
         });
 
-        VerUsuarioButton.setText("VER DATOS DE USUARIOS");
+        VerUsuarioButton.setText("Ver Datos de Usuarios");
         VerUsuarioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VerUsuarioButtonActionPerformed(evt);
@@ -192,14 +193,10 @@ public class AdministradorFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(CerrarButton))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,7 +231,8 @@ public class AdministradorFrame extends javax.swing.JFrame {
                                     .addComponent(CodeRegionTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
                                     .addComponent(NameRegionTextField)
                                     .addComponent(PrecioEstandarTextField)
-                                    .addComponent(PrecioEspecialTextField))))))
+                                    .addComponent(PrecioEspecialTextField)))
+                            .addComponent(CerrarButton))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -261,15 +259,13 @@ public class AdministradorFrame extends javax.swing.JFrame {
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel19))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(CodeMuniComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(NameMuniTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(CodeMuniComboBox, 0, 168, Short.MAX_VALUE)
+                                    .addComponent(NameMuniTextField))
                                 .addContainerGap())
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
@@ -289,7 +285,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(VerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(VerUsuarioButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -315,10 +311,7 @@ public class AdministradorFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CerrarButton))
-                .addGap(26, 26, 26)
+                .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
@@ -383,6 +376,26 @@ public class AdministradorFrame extends javax.swing.JFrame {
                                     .addComponent(SaveDepButton))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addComponent(jLabel21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jButton1))
+                                .addGap(22, 22, 22)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel25)
+                                    .addComponent(jButton4))
+                                .addGap(19, 19, 19)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel26)
+                                    .addComponent(jButton3))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel27)
+                                    .addComponent(jButton2))
+                                .addGap(0, 35, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SaveRegionButton)
                                 .addGap(29, 29, 29)
@@ -404,27 +417,9 @@ public class AdministradorFrame extends javax.swing.JFrame {
                                             .addComponent(CodeRegionComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(15, 15, 15)
                                         .addComponent(SaveKioscoButton)))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addComponent(jLabel21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel24)
-                                    .addComponent(jButton1))
-                                .addGap(22, 22, 22)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel25)
-                                    .addComponent(jButton4))
-                                .addGap(19, 19, 19)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel26)
-                                    .addComponent(jButton3))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel27)
-                                    .addComponent(jButton2))
-                                .addGap(0, 33, Short.MAX_VALUE))))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(CerrarButton)
+                                .addGap(21, 21, 21))))))
         );
 
         pack();
@@ -623,7 +618,6 @@ public class AdministradorFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
