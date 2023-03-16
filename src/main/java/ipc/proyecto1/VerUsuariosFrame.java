@@ -9,6 +9,11 @@ public class VerUsuariosFrame extends javax.swing.JFrame {
     public VerUsuariosFrame() {
         initComponents();
         llenarTablaUsuario();
+        
+         this.setVisible(true);
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setTitle("Ver Usuarios");
     }
 
     /**
